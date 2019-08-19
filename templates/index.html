@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter!</title>
+    </head>
+    <body>    
+        <h1>Counter</h1>
+        <h3>Times: {{session['count']}}</h3>
+        <form method="post" action="/add2">
+            <input type="submit" value='Add 2'>
+        </form>    
+        <form method='post' action='/reset'>
+            <input type='submit' value='reset'>
+        </form>
+    </body>
+</html>
